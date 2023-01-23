@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="mainBody">
+    <div class="nameArea">
+        
+            <h1>Type your name here, it will update after every letter</h1>
+            <input name="name" placeholder="Name">
+        
+    </div>
+    <p>players name here!</p>
+    <h1 class="winner">Winner displayed here</h1>
+
+    <div class="selectionArea">
+        <img src="images/bag.jpg" alt="" class="selectionImage selectionYou">
+        <img src="images/rock.jpg" alt="" class="selectionImage selectionAI">
+    </div>
+    <div class="score">
+        <h1>Score and name should hopefully go here</h1>
+    </div>
+
+    <div class="selectionButtons">
+        <button onclick="stoneSelected()">Sten</button>
+        <button onclick="scissorsSelected()">Sax</button>
+        <button onclick="paperSelected()">Påse</button>
+
+    </div>
+
+    <button onclick="reset()">Reset</button>
+    <h1>This is extremely jank and the counters will go past 3 if given a chance</h1>
+    </div>
+</body>
+</html>

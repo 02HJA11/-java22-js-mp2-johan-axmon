@@ -1,0 +1,27 @@
+.mainBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border: 2px orange solid;
+}
+
+.selectionArea {
+    display: flex;
+    border: 2px lavender solid;
+    height: 300px;
+    width: 700px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.selectionImage {
+    height: 250px;
+}
+
+.nameArea {
+    display: flex;
+    flex-direction: column;
+}
