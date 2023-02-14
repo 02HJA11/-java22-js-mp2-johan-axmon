@@ -15,6 +15,8 @@ function updateValue(e){
 }
 let name = para.innerText;
 function stoneSelected() {
+   let name = para.innerText;
+if(scoreCom < 3 && scoreYou < 3) {
  document.querySelector(".selectionYou").src = "./images/rock.jpg";
    letComSelection = Math.floor(Math.random() * 3);
    switch(letComSelection){
@@ -38,11 +40,14 @@ function stoneSelected() {
         winner.innerText = "The computer won this time";
      }
     break;
+
    }
+}
 }
 
 function scissorsSelected(){
-    
+   let name = para.innerText;
+    if(scoreCom < 3 && scoreYou < 3){
     document.querySelector(".selectionYou").src = "./images/scissors.jpg";
     letComSelection = Math.floor(Math.random() * 3);
     switch(letComSelection){
@@ -67,9 +72,12 @@ function scissorsSelected(){
      }
      break;
     }
+    }
 }
 
 function paperSelected(){
+   let name = para.innerText;
+   if(scoreCom < 3 && scoreYou < 3){
     document.querySelector(".selectionYou").src = "./images/bag.jpg";
     letComSelection = Math.floor(Math.random() * 3);
     switch(letComSelection){
@@ -94,6 +102,7 @@ function paperSelected(){
      scoreStatus.innerText = name + ": " + scoreYou +  " - " + "draw"  + " - com: " + scoreCom;
      break;
     }
+   }
 }
 
 function reset(){
